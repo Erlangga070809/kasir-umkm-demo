@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Owner - Kasir UMKM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/logo.png" alt="Kasir UMKM" class="sidebar-logo" onerror="this.style.display='none'">
+        <span class="sidebar-brand">Kasir UMKM</span>
+      </div>
+      <nav class="sidebar-nav" id="sidebarNav">
+        <a href="#" class="nav-item active" data-page="dashboard">📊 Dashboard</a>
+        <a href="#" class="nav-item" data-page="products">📦 Produk</a>
+        <a href="#" class="nav-item" data-page="categories">🏷 Kategori</a>
+        <a href="#" class="nav-item" data-page="stock">📋 Stok</a>
+        <a href="#" class="nav-item" data-page="transactions">🧾 Transaksi</a>
+        <a href="#" class="nav-item" data-page="customers">👥 Pelanggan</a>
+        <a href="#" class="nav-item" data-page="cashiers">👤 Kasir</a>
+        <a href="#" class="nav-item" data-page="reports">📈 Laporan</a>
+        <a href="#" class="nav-item" data-page="activities">📝 Aktivitas</a>
+        <a href="#" class="nav-item" data-page="settings">⚙ Pengaturan</a>
+        <a href="#" class="nav-item" data-page="profile">👤 Profil</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <span class="user-name" id="sidebarUserName"></span>
+          <span class="user-role">Owner</span>
+        </div>
+        <button class="btn btn-outline btn-sm btn-full" id="logoutButton">Keluar</button>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="topbar-toggle" id="topbarToggle">☰</button>
+        <h2 class="topbar-title" id="topbarTitle">Dashboard</h2>
+        <div class="topbar-actions">
+          <div class="topbar-user" id="topbarUser"></div>
+        </div>
+      </header>
+
+      <div class="page-content" id="pageContent"></div>
+    </main>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content glass-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/owner.js"></script>
+</body>
+</html>
